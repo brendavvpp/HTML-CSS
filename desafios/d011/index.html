@@ -4,13 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 11</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background: darkblue url('espaco.jpg') center center no-repeat fixed;
+            background-size: cover;
+            position: relative;
+            height: 96vh;
+        }
+
+        div#astronauta{
+            background-image: url('astronauta.png');
+            background-size: 100% 100%;
+
+            position: absolute;
+            height: 400px;
+            width: 400px;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+
+    </style>
 </head>
 <body>
-    <picture>
-        <source media="(max-width: 350)" srcset="espaco.jpg">
-        <img src="espaco.jpg" alt="Espaço">
-    </picture>
-    <img src="astronauta.png" alt="astronauta">
+    <div id="astronauta"></div>
 </body>
 </html>
